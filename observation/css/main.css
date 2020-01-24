@@ -1,0 +1,144 @@
+body{
+  margin:0;
+  height:100vh;
+  padding:0;
+  font-family:helvetica;
+  background-color:#faf9ed;
+  cursor:url('../images/focus.png'), auto;
+
+}
+
+menu{
+  font-family:helvetica;
+  font-size:80px;
+  font-weight:bold;
+  margin-left:3%;
+  margin-top:2%;
+  letter-spacing:2.5px;
+}
+.close{
+  margin-left:13%;
+  margin-top:5%;
+}
+
+.open{
+  margin-top:10%;
+    margin-left:-10%;
+}
+
+.back{
+  margin-left:10%;
+  margin-top:10%;
+}
+
+.hover-animation{
+  width:100%;
+  height: 250px;
+  display:inline-block;
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center;
+  position:relative;
+  overflow:hidden;
+}
+
+.hover-animation:before,
+
+.hover-animation:after{
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  content:'';
+  position:absolute;
+  background:inherit;
+  transition:.3s;
+}
+
+.hover-animation{
+  display:-webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display:-o-flex;
+  display:flex;
+  font-family:helvetica;
+  font-weight:bold;
+  font-size:18pt;
+  content:attr(data-text);
+
+}
+
+nav{
+  width:100%;
+  height:60px;
+  background-color:#faf9ed;
+}
+
+nav p{
+  font-family:helvetica;
+  color:#222;
+  font-size:12px;
+  line-height:55px;
+  float:left;
+  padding:0px 20px;
+}
+
+nav ul{
+  float:left;
+}
+
+nav ul li{
+  float:left;
+  list-style:none;
+
+}
+
+nav ul li{
+  float:left;
+  list-style:none;
+  position:relative;
+
+}
+
+nav ul li a{
+  color:#222;
+  font-family:helvetica;
+  font-weight:bold;
+  color:#222;
+  font-size:27px;
+  padding:22px 14px;
+  display:block;
+  text-decoration:none;
+
+
+}
+
+nav ul li ul{
+  display:none;
+  position:absolute;
+  background-color:#faf9ed;
+  padding: 5px;
+  border-radius:0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+  display:block;
+}
+
+nav ul li ul li{
+width:180px;
+border-radius:4px;
+}
+
+nav ul li ul li a{
+padding: 8px 14px;
+}
+
+nav ul li ul li a:hover{
+background-color:red;
+color:black;
+}
+
+ul li a:hover{
+  color:red;
+}
