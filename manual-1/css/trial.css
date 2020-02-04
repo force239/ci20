@@ -1,0 +1,89 @@
+html, body{
+    width:200%;
+    height:100%;
+    margin:0;
+  }
+
+  p{
+    font-family:helvetica;
+    font-weight:bold;
+    font-size:24px;
+  }
+  div{
+    height:100%;
+    width:100%;
+  }
+/*
+  .top{
+    background-color:white;
+    height:30%;
+    width:100%;
+  }
+  */
+
+
+  .middle{
+    background-color:#fcf5de;
+    height:100%;
+    width:100%;
+  }
+
+  .one{
+    background-color:#fcf5de;
+  }
+
+  .two{
+    background-color:#fcf5de;
+  }
+  .three{
+    background-color:#fcf5de;
+  }
+
+  .four{
+    background-color:#fcf5de;
+  }
+
+  .five{
+    background-color:#fcf5de;
+  }
+
+  .six{
+    background-color:#fcf5de;
+  }
+
+/*
+  .bottom{
+    background-color:white;
+    height:30%;
+    width:100%;
+  }
+  */
+
+  .slide{
+    width:100vw;
+    height:100vh;
+  }
+  .wrapper{
+    display:flex;
+    flex-direction:row;
+    width:400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin:top left;
+
+  }
+
+  .outer-wrapper{
+    width:100vw;
+    height:100vh;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin:top left;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    position:absolute;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+  }
+
+  ::-webkit-scrollbar{
+    display:none;
+  }
