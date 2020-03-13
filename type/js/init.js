@@ -252,6 +252,8 @@ var lastdate = (new Date()).getTime();
                         $('#container')[0].style.fontSize = '30px';
                         $('#container')[0].style.color = "rgb(255, 213, 3)";
                         $('#cursor')[0].style.fontSize = '40px';
+
+                
                     }
 
                 }
