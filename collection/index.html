@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tell Me About Your Favorite Song</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="js/script.js"></script>
+      <script src="js/jquery.min.js"></script>
+  </head>
+  <body id="index">
+
+    <div class="background-noise"></div>
+    <div class="homepage"><a href="index.html">X</a></div>
+
+<div class="index">
+    <!-- Homepage Categories -->
+    <div class="genres">
+      <div class="home">
+        <li><a href="#" class="filter" onclick="show('.genre');">genre</a></li>
+      </div>
+        <p>favorite song <br> based on</p>
+      </div>
+
+      <div class="senses">
+        <div class="home">
+          <li><a href="#" class="filter" onclick="show('.sense');">senses</a></li>
+        </div>
+        <p>favorite song <br> based on</p>
+      </div>
+</div>
+
+<!-- SUBCATEGORIES -->
+<div class="subcat">
+
+      <!-- Genre Subcategories -->
+
+        <div class="genre one"><a href="#" onclick="show('.countrysub');">country</a></div>
+        <div class="genre two"><a href="#" onclick="show('.discosub');">disco</a></div>
+        <div class="genre three"><a href="#" onclick="show('.folksub');">folk</a></div>
+        <div class="genre four"><a href="#" onclick="show('.hiphopsub');">hip hop / rap</a></div>
+        <div class="genre five"><a href="#" onclick="show('.jazzsub');">jazz</a></div>
+        <div class="genre six"><a href="#" onclick="show('.popsub');">pop</a></div>
+        <div class="genre seven"><a href="#" onclick="show('.rocksub');">rock</a></div>
+        <div class="genre eight"><a href="#" onclick="show('.rnbsub');">r&b</a></div>
+
+      <!-- Senses Category -->
+
+        <div class="sense nine"><a href="#" onclick="showSub2('.breathless');">breathless</a></div>
+        <div class="sense ten"><a href="#" onclick="showSub2('.catharsis');">catharsis</a></div>
+        <div class="sense eleven"><a href="#" onclick="showSub2('.chills');">chills</a></div>
+        <div class="sense twelve"><a href="#" onclick="showSub2('.empowers');">empowers</a></div>
+        <div class="sense thirteen"><a href="#" onclick="showSub2('.heart');">makes your heart race</a></div>
+        <div class="sense fourteen"><a href="#" onclick="showSub2('.dance');">makes you want to dance</a></div>
+        <div class="sense fifteen"><a href="#" onclick="showSub2('.nostalgia');">nostalgic</a></div>
+</div>
+
+  <!-- GENRE SUBS -->
+      <div class="countrysub sub">
+        <p>country subgenres</p>
+        <li class="country2"><a href="#" onclick="showSub('.country_sub');">country</a></li>
+        <li class="countrypop"><a href="#" onclick="showSub('.country_pop');">country pop</a></li>
+
+      </div>
+
+      <div class="discosub sub1">
+        <p>disco subgenres</p>
+        <li class="disco2"><a href="#" onclick="showSub('.disco_sub');">disco</a></li>
+        <li class="house"><a href="#" onclick="showSub('.house');">house</a></li>
+      </div>
+
+      <div class="folksub sub2">
+        <p>folk subgenres</p>
+        <li class="folk2"><a href="#" onclick="showSub('.folk');">folk</a></li>
+        <li class="indiefolk"><a href="#" onclick="showSub('.indie_folk');">indie folk</a></li>
+        <li class="psychfolk"><a href="#" onclick="showSub('.psych_folk');">psychedelic folk</a></li>
+
+      </div>
+
+      <div class="hiphopsub sub3">
+        <p>hip hop subgenres</p>
+        <li class="indiehiphop"><a href="#" onclick="showSub('.indie_hip_hop');">alt hip hop</a></li>
+        <li class="funk"><a href="#" onclick="showSub('.funk_hiphop');">funk</a></li>
+        <li class="hiphop2"><a href="#" onclick="showSub('.hiphop_sub');">hip hop</a></li>
+        <li class="rap"><a href="#" onclick="showSub('.rap');">rap</a></li>
+
+      </div>
+
+      <div class="popsub sub4">
+        <p>pop subgenres</p>
+        <li class="acousticpop"><a href="#" onclick="showSub('.acoustic_pop');">acoustic pop</a></li>
+        <li class="altpop"><a href="#" onclick="showSub('.alt_pop');">alt pop</a></li>
+        <li class="electropop"><a href="#" onclick="showSub('.electro_pop');">electro pop</a></li>
+        <li class="indiepop"><a href="#" onclick="showSub('.indie_pop');">indie pop</a></li>
+        <li class="lofipop"><a href="#" onclick="showSub('.lofi_pop');">lofi pop</a></li>
+        <li class="newwavepop"><a href="#" onclick="showSub('.new_wave_pop');">new wave pop</a></li>
+        <li class="rnbpop"><a href="#" onclick="showSub('.rnb_pop');">r&b pop</a></li>
+        <li class="softpop"><a href="#" onclick="showSub('.soft_pop');">soft pop</a></li>
+        <li class="synthpop"><a href="#" onclick="showSub('.synth_pop');">synth pop</a></li>
+      </div>
+
+      <div class="rocksub sub5">
+        <p>rock subgenres</p>
+        <li class="acousticrock"><a href="#" onclick="showSub('.acoustic_rock');">acoustic rock</a></li>
+        <li class="altrock"><a href="#" onclick="showSub('.alt_rock');">alt rock</a></li>
+        <li class="rock2"><a href="#" onclick="showSub('.rock_sub');"> classic rock</a></li>
+        <li class="folkrock"><a href="#" onclick="showSub('.folk_rock');">folk rock</a></li>
+        <li class="funkrock"><a href="#" onclick="showSub('.funk_rock');">funk rock</a></li>
+        <li class="glamrock"><a href="#" onclick="showSub('.glam_rock');">glam rock</a></li>
+        <li class="metalrock"><a href="#" onclick="showSub('.metal_rock');">metal rock</a></li>
+        <li class="newwaverock"><a href="#" onclick="showSub('.new_wave_rock');">new wave rock</a></li>
+        <li class="poprock"><a href="#" onclick="showSub('.pop_rock');">pop rock</a></li>
+        <li class="psychedelicrock"><a href="#" onclick="showSub('.psychedelic_rock');">psychedelic rock</a></li>
+        <li class="punkrock"><a href="#" onclick="showSub('.punk_rock');">punk rock</a></li>
+        <li class="softrock"><a href="#" onclick="showSub('.soft_rock');">soft rock</a></li>
+
+
+      </div>
+
+      <div class="rnbsub sub6">
+        <p>r&b subgenres</p>
+        <li class="altrnb"><a href="#" onclick="showSub('.alt_rnb');">alt r&b</a></li>
+        <li class="rnb2"><a href="#" onclick="showSub('.rnb_sub');">r&b</a></li>
+        <li class="soulrnb"><a href="#" onclick="showSub('.soul_rnb');">soul r&b</a></li>
+
+      </div>
+
+      <div class="jazzsub sub7">
+        <p>jazz subgenres</p>
+        <li class="altrnb"><a href="#" onclick="showSub('.soul_jazz');">soul</a></li>
+      </div>
+
+  <div class="result">
+  </div>
+
+  </body>
+</html>
