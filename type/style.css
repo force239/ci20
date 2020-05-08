@@ -64,7 +64,8 @@ html{
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
 body {
-        font-family: 'Archivo Black';
+        font-family: helvetica;
+        font-weight:bold;
         font-size: 200px;
         line-height: 1em;
         background-color: #f9f8f4;
